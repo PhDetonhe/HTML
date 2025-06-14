@@ -1,0 +1,425 @@
+HTML:
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elden ring wiki</title>
+ <header>
+  <img src="https://static.wikia.nocookie.net/eldenring/images/2/27/ER_golden_order.png/revision/latest?cb=20220418220128"; height="50"
+width="50" >
+  <h1>Elden Ring</h1>
+  <br>
+ </header>
+  <link rel = "stylesheet" href = "main.css"> 
+</head>
+<style>
+</style>
+<body class=“light-theme”>
+  <hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+  <hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+  <br>
+  <div class="textos">
+    <div class="card">
+      <h1>Armas:</h1>
+        <p id = "msg">Armas em Elden ring são peças de equipamento ofensivo que são usadas pelo 
+          personagem do jogador para infligir danos contra Inimigos e Chefes
+          Elden Ring apresenta 308  armas de novas categorias, 
+          além de algumas que retornam de jogos Souls anteriores </p>
+          <br>
+
+
+      <p id = "msg" style="font-size: 18px;">Para mais informações sobre essas 308 armas disponiveis até o momento no jogo, por favor acesse este video com as caracteristicas de cada uma e também seu ranking da pior para a melhor:</video> </p>
+
+  <br>
+
+  <div class="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-XixNTEqNrE?si=kHIqjhzT6-gONZLv" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <br>
+
+
+
+<hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+<h1> Armas lendarias: </h1>
+<hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+
+
+    <p id = "msg">Armas lendarias: Para desbloquear o Troféu e Conquista de Armamentos Lendários, você precisará adquirir as seguintes armas:
+      <ul>
+        <li>Devourer's Scepter</li>
+        <li>Grafted Blade Greatsword</li>
+        <li>Sword of Night and Flame</li>
+        <li>Ruins Greatsword</li>
+        <li>Marais Executioner's Sword</li>
+        <li>Dark Moon Greatsword</li>
+        <li>Bolt of Gransax</li>
+        <li>Eclipse Shotel</li>
+        <li>Golden Order Greatsword</li>
+      </ul>
+    </p>
+   <div class="content">
+      <div class="slides">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+        <input type="radio" name="slide" id="slide6">
+        <input type="radio" name="slide" id="slide7">
+        <input type="radio" name="slide" id="slide8">
+        <input type="radio" name="slide" id="slide9">
+         
+        <div class="slide s1">
+         <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/skill-devourer-of-worlds-elden-ring-wiki-480px.gif" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://preview.redd.it/the-grafted-blade-greatsword-from-elden-ring-v0-xmf9wagwvjge1.png?width=640&crop=smart&auto=webp&s=2dc67a80c077388557f90b17add2631a3e07e6d2" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/skill-night-and-flame-stance-elden-ring-wiki-480px.gif" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/skill-wave-of-destruction-elden-ring-wiki-480px.gif" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/04/marais-executioner-blade-elden-ring-2.jpg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://i.redd.it/crb0qv3zs2091.jpg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/skill-ancient-lightning-spear-elden-ring-wiki-480px.gif" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://www.gameskinny.com/wp-content/uploads/gameskinnyc/e/l/d/elden-ring-eclipse-shotel-guide-210c3.jpg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/skill-establish-order-elden-ring-wiki-480px.gif" alt="">
+        </div>
+      </div>
+      
+      <div class="navigation">
+        <label class="bar" for="slide1"></label class="bar">
+        <label class="bar" for="slide2"></label class="bar">
+        <label class="bar" for="slide3"></label class="bar">
+        <label class="bar" for="slide4"></label class="bar">
+        <label class="bar" for="slide5"></label class="bar">
+        <label class="bar" for="slide6"></label class="bar">
+        <label class="bar" for="slide7"></label class="bar">
+        <label class="bar" for="slide8"></label class="bar">
+        <label class="bar" for="slide9"></label class="bar">
+      </div>
+    </div>
+  
+
+    <hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+    <h1> Tipos de dano </h1>
+    <p id = "msg"> 
+      Todas as armas em Elden Ring têm uma ou mais Tipos de dano, Por exemplo, as Espadas Longas causam tanto Dano Padrão quanto Dano Perfurante. Isso ocorre porque seus ataques normais são considerados Dano Padrão, enquanto seu ataque (R2/RB) é uma estocada, causando Dano Perfurante. Saber quais tipos de dano sua arma escolhida causa pode ser útil, já que muitos inimigos são fracos ou resistentes a certos tipos de dano.
+      
+      Além disso, você pode alterar o tipo de dano de muitas armas no Elden Ring, através de cinzas das Guerras, é possivel colocar cinzas de guerra em suas armas a partir do menu Ashes of War. Selecionar sua arma neste menu mostrará quais Cinzas de Guerra você pode usar em sua arma dentre as que você possui atualmente.
+      
+      Por exemplo, se você usar  Ash of War: Gravitas em sua espada longa Você adicionará Dano Mágico à Arma, além dos outros Tipos de Dano. Adicionar Cinzas de Guerra também mudará a Escala da Espada Longa de FOR D e DES D para FOR D, DES E e INT C, permitindo que você aproveite melhor outros atributos. Isso torna o Dano Mágico um bom tipo para quem usa Feitiços, já que estes se tornam mais fortes quanto mais Inteligência você possui.</p>
+      <br>
+      <hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+      <h1> Cinzas de guerra: </h1>
+      <p id = "msg"> 
+        Cinzas da Guerra em Elden ring são itens especiais que permitem que você conceda seus armamentos (Armas e Escudos) novas Habilidades e Afinidades. 
+        Eles são essenciais para a criação de builds e adaptando-se às muitas Inimigos e Chefes das Terras Intermediárias.
+        Um armamento só pode ter uma habilidade; quaisquer habilidades que ele tivesse anteriormente serão removidas.
+        O tipo de armamento determina quais habilidades ou afinidades ele pode ter. Detalhes sobre os armamentos para os quais um Ash of War serve podem ser encontrados na descrição do item.
+        Alguns armamentos especiais têm habilidades únicas e não é possível obter novas. 
+        Ashes of War pode ser usado repetidamente sem custo, diferente de itens semelhantes de títulos anteriores da FromSoftware (Embers, Stones e Gems).
+      </p>
+      <br>
+      <hr style="border: 2px solid rgb(146, 139, 97); width: 100%;">
+  <table> 
+    <tr> 
+    <thead>
+      <th style="font-size: 20px;">Armas</th>
+      <th style="font-size: 20px;">Dano</th>
+      <th style="font-size: 20px;">habilidade</th>
+      <th style="font-size: 20px;">imagem</th>
+    </thead>
+    </tr>
+    <tr>
+    <tbody>
+      <td style="font-size: 20px;"> Greatsword of Radhan</td>
+      <td style="font-size: 20px;"> Standard+10: Fisico: 311 mag: 200</td>
+      <td style="font-size: 20px;"> Promised Consort: Imbui as duas espadas grandes com a luz de Miquella e, em seguida, desfira um ataque cortante acompanhado por colunas de luz.</td>
+      <td style="font-size: 20px;"> <img src= "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatsword_of_radahn_(lord)_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"></td>
+    </tr>
+    <tr>
+      <td style="font-size: 20px;">Rivers of Blood</td>
+      <td style="font-size: 20px;">Standard +10: Fisico: 186 fogo: 186  </td>
+      <td style="font-size: 20px;">Corpse Piler: Forma uma lâmina de sangue amaldiçoado para ataques sucessivos repetidos e entrelaçados. Causando sangramento. </td>
+      <td> <img src= "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rivers_of_blood_katana_weapon_elden_ring_wiki_guide_200px.png"></td>
+    </tr>
+    <tr>
+      <td style="font-size: 20px;">Serpent-Hunter</td>
+      <td style="font-size: 20px;">Standard +10: Fisico: 271</td>
+      <td style="font-size: 20px;">Great-Serpent Hunt: Execute uma investida poderosa para a frente e, em seguida, prossiga com um
+        impulso para cima com um impulso adicional.</td>
+        <td> <img src= "https://eldenring.wiki.fextralife.com/file/Elden-Ring/serpent-hunter_greatspear_weapon_elden_ring_wiki_guide_200px.png"> </td>
+    </tr>
+    <tr> 
+      <td style="font-size: 20px;">Grafted Dragon</td>
+      <td style="font-size: 20px;">Standard +10: fisico: 218 fogo: 139</td>
+      <td style="font-size: 20px;">Bear Witness!:Conceda ao pequeno dragão um breve vislumbre de vida e lance-o em direção ao céu, cuspindo chamas sobre uma ampla área frontal.  </td>
+      <td><img src= "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grafted_dragon_fist_weapon_elden_ring_wiki_guide_200px.png"></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+  <div>
+        <button class="btn">Dark</button>  
+    </div>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view this full site</noscript>
+
+
+
+</body>
+</html>
+
+CSS:
+body {
+    font-family: monospace;
+    color: #b4911f;
+    font-size: 18px;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}   
+    ul {
+    
+    font-family: helvética;
+    
+    }
+
+    .dark-theme {
+        background-image: url('https://i0.wp.com/thetechnovore.com/wp-content/uploads/2022/02/vlcsnap-2022-02-11-11h47m25s774.png?fit=3840%2C2160&ssl=1');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-attachment: fixed;
+        
+        .card{
+            background-color: #fffcf7 ;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(255, 239, 95, 0.63);
+            opacity: 0.9;
+            border: 40px solid #fffcf7;
+            width: 1000px;
+            padding-top: 0px;
+            margin: 0 auto;
+          }
+    
+          body {
+            font-family: monospace;
+            color: #000000;
+            font-size: 18px;
+        }
+          
+    }
+    
+
+
+
+
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: 0;
+      }
+        body{
+          background-image: url('https://images.wallpapersden.com/image/download/4k-elden-ring-nightreign_bmhmZW2UmZqaraWkpJRobWllrWdma2Y.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100vh;
+          background-attachment: fixed;
+        }
+        .card {
+          background-color: #1f1f1f ;
+          padding: 15px;
+          border-radius: 25px;
+          text-align: left;
+          box-shadow: 0 0 10px rgba(255, 218, 9, 0.63);
+          opacity: 0.9;
+          border: 40px solid #1f1f1f00;
+          width: 1000px;
+          padding-top: 20px;
+          margin: 0 auto;
+        }
+      
+    table{
+    border-collapse: collapse;
+    width: 100%;
+    }    
+
+    th, td{
+        border-radius: 50%;
+        border: 1px solid #ffd000
+    }
+
+
+
+
+header{
+ background-color: rgba(252, 253, 253, 0);
+ opacity: 0.9;
+ display: flex;
+ gap: 10px;
+
+}
+
+header h1{
+  margin: 15px;
+  font-size: 32px;
+  color: #d4af37; /* opcional: dourado */
+  font-family: serif; /* opcional: estilo mais clássico */
+}
+
+.btn {
+    color:#1f1f1f;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 5px;
+    left: 1150px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    width: 100vw;
+
+    
+}
+
+.content {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+    
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+   
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b4911f;
+    margin: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background-color: #b4911f;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 5400; 
+    height: 100%;
+    transition: margin-left 0.5s;
+    
+}
+
+.slide {
+    width: 600px;
+    height: 350px;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+/* Navegação por radio button */
+#slide1:checked ~ .s1 { 
+    margin-left: 0; }
+#slide2:checked ~ .s1 { 
+    margin-left: -600px; }
+#slide3:checked ~ .s1 { 
+    margin-left: -1200px; }
+#slide4:checked ~ .s1 { 
+    margin-left: -1800px; }
+#slide5:checked ~ .s1 { 
+    margin-left: -2400px; }
+#slide6:checked ~ .s1 { 
+    margin-left: -3000px; }
+#slide7:checked ~ .s1 { 
+    margin-left: -3600px; }
+#slide8:checked ~ .s1 { 
+    margin-left: -4200px; }
+#slide9:checked ~ .s1 { 
+    margin-left: -4800px; }
+
+iframe{
+  left:50px;
+}
+
+.center{
+  text-align: center;
+}
+
+
+JavaScript:
+'use strict';
+const switcher = document.querySelector('.btn');
+
+switcher.addEventListener('click', function () {
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+
+    if (document.body.classList.contains('light-theme')) {
+        this.textContent = 'Dark';
+    } else {
+        this.textContent = 'Light';
+    }
+
+    console.log('Current class list: ' + document.body.className);
+});
