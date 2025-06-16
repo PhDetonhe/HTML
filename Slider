@@ -378,7 +378,7 @@ input {
     border-radius: 0;
 }
 
-/* Navegação por radio button */
+
 #slide1:checked ~ .s1 { 
     margin-left: 0; }
 #slide2:checked ~ .s1 { 
