@@ -291,8 +291,8 @@ header{
 header h1{
   margin: 15px;
   font-size: 32px;
-  color: #d4af37; /* opcional: dourado */
-  font-family: serif; /* opcional: estilo mais clássico */
+  color: #d4af37; 
+  font-family: serif;
 }
 
 .btn {
