@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(221, 16, 16);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+header{
+    background-color: black;
+    text-align: center;
+    box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1{
+  font-family: "Fugaz One", sans-serif;
+}
+
+.Section {
+    font-size: 20px;
+    background-color: #c0c0c0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px;
+    
+}
+
+.Section img{
+    width: 33%;
+    gap: 0;
+}
+
+
+footer {
+    font-size: 18px;
+    background-color: #000000;
+    text-align: center;
+}
+
+footer p{
+    display: inline;
+
+}
+
+footer h3{
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer ul{
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li{
+    display: list-item;
+}
+
+
+
+
