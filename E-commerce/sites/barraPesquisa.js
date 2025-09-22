@@ -16,16 +16,16 @@ const produtos = [
 const Pesquisa = document.getElementById("Pesquisa");
 const sugestao = document.getElementById("sugestao");
 
-// Mostrar sugestões ao clicar
+
 Pesquisa.addEventListener("focus", () => {
   atualizarSugestoes();
   sugestao.style.display = "block";
 });
 
-// Filtrar conforme digita
+
 Pesquisa.addEventListener("input", atualizarSugestoes);
 
-// Enter → abrir página do produto se existir
+
 Pesquisa.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
@@ -58,7 +58,7 @@ function atualizarSugestoes() {
     div.addEventListener("click", () => {
       Pesquisa.value = item.nome;
       sugestao.style.display = "none";
-      window.location.href = item.link; // vai direto pra página
+      window.location.href = item.link;
     });
     sugestao.appendChild(div);
   });
@@ -66,9 +66,10 @@ function atualizarSugestoes() {
   sugestao.style.display = "block";
 }
 
-// Fechar se clicar fora
+
 document.addEventListener("click", (e) => {
   if (!e.target.closest(".search-container")) {
     sugestao.style.display = "none";
   }
+
 });
