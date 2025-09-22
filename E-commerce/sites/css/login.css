@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url(https://images.squarespace-cdn.com/content/v1/606d4bb793879d12d807d4c8/1b547f53-e6f9-461e-b9df-0104e04726b5/new-bg.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+  background-color: #000000; 
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #c50000; /* efeito hover */
+  text-decoration: underline;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-icons input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.icons span:hover {
+  color: #ffeb3b;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom{
+    text-align: center;
+}
+
+h3{
+  padding: 0px;
+  color: rgb(0, 0, 0);
+  background-color: #fcf6f6;
+  text-align: center;
+}
+
+
+
+.login-container{
+     margin: 50px auto;
+    padding: 30px 40px;
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.login-container h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.input{
+    position:relative ;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    background-color: rgb(177, 177, 177);
+    border-radius: 20px;
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid  rgba(255, 255, 255, .2);
+    padding: 20px 40px 20px 20px;
+    border-radius: 20px;
+}
+
+.input i{
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    font-size: 15px;
+}
+
+.lembrar{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.lembrar label input{
+    accent-color: white;
+}
+
+.lembrar a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.lembrar a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: 0.5s;
+}
+
+.log{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.log:hover{
+    background-color: rgb(253, 81, 81);
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    transition: 0.5s;
+}
+
+.registro-link{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.registro-link a{
+    text-decoration: none;
+    color: black;
+}
+
+.registro-link a:hover{
+    color: white;
+    transition: 0.5s;
+    text-decoration: underline;
+}

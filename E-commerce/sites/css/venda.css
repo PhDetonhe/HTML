@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Container do slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto; /* centraliza no meio da página */
+    overflow: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background: white;
+}
+
+/* Faixa com todos os slides */
+.passa-slide {
+    display: flex;
+    width: calc(250px * 8); /* ajuste conforme quantidade de itens */
+    animation: scroll 45s linear infinite;
+}
+
+/* Cada slide */
+.slide {
+    min-width: 250px;
+    padding: 15px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.slide h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.slide p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.slide button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slide button:hover {
+    background-color: #c50000;
+}
+
+/* Animação */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #c50000;
+    /* efeito hover */
+    text-decoration: underline;
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-icons input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.icons span:hover {
+    color: #ffeb3b;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+h3 {
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    background-color: #fcf6f6;
+    text-align: center;
+}

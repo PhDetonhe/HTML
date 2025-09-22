@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Fugaz One", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  background-color: #000000; 
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #c50000; /* efeito hover */
+  text-decoration: underline;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-icons input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.icons span:hover {
+  color: #ffeb3b;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom{
+    text-align: center;
+}
