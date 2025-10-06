@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #f0f0f0; 
+}
+
+.caixa{
+    background-color: purple;
+    color: white;
+    padding: 30px 40px;
+}
+
+.caixa h1{
+    text-align: center;
+    background-color: rgb(115, 142, 167);
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+
+input,
+select{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+   border: rgb(0, 0, 0) solid 2px;
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+button:hover{
+    scale: 105%;
+    background-color: rgb(170, 88, 170);
+    transition: 0.4s;
+}
+
