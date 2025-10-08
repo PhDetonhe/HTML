@@ -1,17 +1,17 @@
 document.getElementById('formulario').addEventListener('submit', async function (e) {
     e.preventDefault();
-    const temp = parseFloat(document.getElementById('temp').value);
+    const moeda = parseFloat(document.getElementById('moeda').value);
     const de = document.getElementById('de').value;
     const para = document.getElementById('para').value;
 
     try {
-        const response = await fetch('http://localhost:8080/conversor', {
+        const response = await fetch('http://localhost:8080/moedas', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: new URLSearchParams({
-                temp: temp,
+                moeda : moeda,
                 de: de,
                 para: para
             })
