@@ -1,9 +1,8 @@
-img{
+.imagem{
     width: 30%;
     height: 30%;
     border-radius: 20px;
-    margin-top: 70px;
-    margin-left: 33%;
-    margin-right: 20%;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
