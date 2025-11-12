@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+* {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #FCECD4;
+    border: 15px #DFD0B8 solid;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    background-image: url("../Images/plmdds.png");
+    background-size: cover;        
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 50vh;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 9%;
+    font-size: 45px;
+}
+
+h3 {
+    margin-inline: 150px;
+    font-size: 25px;
+
+}
+
+p {
+
+    font-size: 25px;
+    text-align: justify;
+    text-align-last: center;
+
+}
+
+.next {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.sil{
+    width: 25%;
+    height: 25%;
+    border-radius: 20px;
+    margin-left: 37%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+
+pre{
+    font-size: 25px;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 35% ;
+}
+
+.conteiner{
+  display: flex;
+  gap: 5%;
+  position: relative;
+  justify-content: center;
+}
+
+.textinho{
+    max-width: 30%;
+}
+
+.textinho2{
+    max-width: 30%; 
+
+}
+
+.cod{
+    margin-right: 400px;
+}
+
+.juncao{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-right: 200px;
+    margin-top: -5%;
+}
+
+.cod1{
+    max-width: 30%; 
+}
+
+.cod2{
+    max-width: 30%; 
+}
+
+.tudo{
+    margin-inline: 25%;
+}
+
+h1{
+    font-size: 100px;
+    margin-top: 17%;
+}
+
+.imng{
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.srr{
+    margin-top: -2%;
+}
