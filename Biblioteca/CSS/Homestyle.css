@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(194, 147, 20);
+}
+
+
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.title {
+    display: inline-block;
+    font-size: 50px;
+    transform: translateY(-22px);
+    margin: 0;
+
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+menu li a {
+    text-decoration: none;
+    font-size: 45px;
+
+}
+
+.livrosContainer {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    justify-content: space-between;
+    margin: 5% auto;
+    padding: 90px;
+    gap: 50px;
+}
+
+
+
+.livrosdireita {
+    flex: 1;
+}
+
+#tituloLivro {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#textoLivro {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#anterior,
+#proximo {
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    transition: 0.3s;
+}
+
+#anterior:hover,
+#proximo:hover {
+    background: #ccc;
+}
+
+
+.footer {
+    padding: 40px 20px 20px 20px;
+    color: black;
+}
+
+
+.footercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footercoluna {
+    margin-bottom: 20px;
+}
+
+.bottom {
+    text-align: center;
+}
