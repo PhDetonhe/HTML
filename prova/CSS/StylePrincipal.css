@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248, 215, 154);
+}
+header{
+    background-color: rgb(240, 189, 130);
+    padding: 20px;
+}
+
+#cabecalho{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 30%;
+}
+
+.logo a{
+      text-decoration: none;
+      color: black;
+}
+
+.logo{
+    font-size: 45px;
+    font-weight: bold;
+    font-style: normal;  
+}
+
+.logo:hover{
+    transition: ease 0.3s;
+    color: rgba(196, 2, 2, 0.884);
+}
+
+.navegacao li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 2vw;  
+}
+
+.navegacao{
+    margin-top: 20px;
+}
+
+#Card{
+    background-color: rgb(240, 189, 130);
+    width: 45vw;
+    height: 50vh;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto; 
+}
+
+#Card button{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#CardCategoria{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: rgb(240, 189, 130);
+    width: 45vw;
+    height: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;   
+}
+
+#CardCategoria button{
+    width: 50%;
+    height: 35%;
+    margin: 30px auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+main .texto {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#Mensagem{
+    margin-top: 3%;
+    background-color: rgb(243, 178, 104);
+    width: 99.2vw;
+    font-size: 30px;
+}
+
+img{
+    border-radius: 10px;
+    width: 300px;
+}
+
+footer{
+   background-color: rgb(240, 189, 130);
+   margin-top: 6%;
+}
+
+.colunafooter{
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.colunafooter ul{
+    list-style: none;
+}
+
+.footerbottom {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

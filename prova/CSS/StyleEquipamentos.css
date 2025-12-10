@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 228, 196);
+}
+header{
+    background-color: rgb(240, 189, 130);
+    padding: 20px;
+}
+
+#cabecalho{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 30%;
+}
+
+.logo a{
+      text-decoration: none;
+      color: black;
+}
+
+.logo{
+    font-size: 45px;
+    font-weight: bold;
+    font-style: normal;  
+}
+
+.logo:hover{
+    transition: ease 0.3s;
+    color: rgba(196, 2, 2, 0.884);
+}
+
+.navegacao li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 2vw;  
+}
+
+.navegacao{
+    margin-top: 20px;
+}
+
+.Itens{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+#item1 img, #item2 img, #item3 img{
+    justify-items: center;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#item1, #item2, #item3{
+    background-color: rgb(240, 189, 130);
+    height:70vh;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+#item1 p, #item2 p, #item3 p{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20%;
+    font-weight: bold;
+}
+
+
+footer{
+   background-color: rgb(240, 189, 130);
+   margin-top: 6%;
+}
+
+.colunafooter{
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.colunafooter ul{
+    list-style: none;
+}
+
+.footerbottom {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
