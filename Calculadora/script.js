@@ -1,77 +1,96 @@
+const display = document.getElementById("display");
+const buttons = document.querySelectorAll(".calculator-buttons button");
 
+let num1 = null;
+let operacao = null;
+let esperandoSegundoNumero = false;
 
+display.value = "0";
 
-let num1 = '';
-let num2 = '';
-let operacao = '';
-let display = document.getElementById('display');
-document.getElementById('calculator-button').addEventListener('click', async function (e) {
-    if(!e.target.matches('button'))
-    return;
+buttons.forEach(button => {
+    button.addEventListener("click", async () => {
+        const valor = button.innerText;
 
-    const valorCalculo = e.target.value;
-
-    if(!isNaN(valorCalculo) || valorCalculo === '.')
-    {
-        if(!operacao) {
-            num1 += valorCalculo;
-            display.textContent = num1;
-        } else {
-            num2 += valorCalculo;
-            display.textContent = num2;
-        } return;
-    }
-
-    if(['+', '-', '*', '/'].includes(valorCalculo)) {
-        if(num1 === '') return;
-        operacao = valorCalculo
-        return;
-    }
-
-
-    if (valor === 'C') {
-        num1 = '';
-        num2 = '';
-        operacao = '';
-        display.textContent = '0';
-        return;
-    }
-
-    if (valor === '='){
-        if(num1 === '' || num2 === '' || !operacao) {
-            display.textContent = "ERRO!";
+        if (valor === "C") {
+            display.value = "0";
+            num1 = null;
+            operacao = null;
+            esperandoSegundoNumero = false;
             return;
         }
-    }
 
-    try {
-        const response = await fetch('http://localhost:8080/calcular', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: new URLSearchParams({
-                num1: num1,
-                num2: num2,
-                operacao: operacao
-            })
-        });
-
-        if (!response.ok) {
-            throw new Error('Erro na requisição');
+        if (!isNaN(valor) || valor === ".") {
+            if (display.value === "0" || esperandoSegundoNumero) {
+                display.value = valor;
+                esperandoSegundoNumero = false;
+            } else {
+                display.value += valor;
+            }
+            return;
         }
 
-        const data = await response.json();
+        if (["+", "-", "*", "/"].includes(valor)) {
+            num1 = parseFloat(display.value);
 
-        if (data.erro) {
-            document.getElementById('erro').textContent = data.erro;
-        } else {
-            document.getElementById('resultado').textContent = 'Resultado: ' + data.resultado;
+            switch (valor) {
+                case "+":
+                    operacao = "somar";
+                    break;
+                case "-":
+                    operacao = "subtrair";
+                    break;
+                case "*":
+                    operacao = "multiplicar";
+                    break;
+                case "/":
+                    operacao = "dividir";
+                    break;
+            }
+
+            esperandoSegundoNumero = true;
+            return;
         }
 
-    } catch (err) {
-        document.getElementById('erro').textContent = 'Erro: ' + err.message;
-    }
+        if (valor === "=") {
+            const num2 = parseFloat(display.value);
 
-    
+            try {
+                const response = await fetch("http://localhost:8080/calcular", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams({
+                        num1: num1,
+                        num2: num2,
+                        operacao: operacao
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.errou) {
+                    alert(data.errou);
+                } else {
+                    display.value = data.resultado;
+                }
+
+                num1 = null;
+                operacao = null;
+
+            } catch (e) {
+                alert("Erro ao conectar com o servidor");
+                console.error(e);
+            }
+        }
+
+        if (valor === "x²") {
+            const n = parseFloat(display.value);
+            display.value = n * n;
+        }
+
+        if (valor === "%") {
+            display.value = parseFloat(display.value) / 100;
+        }
+    });
 });
