@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Tailwind CSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 
 
@@ -13,15 +14,14 @@
     <nav class="bg- bg-gray-900 shadow-md">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16"> 
-                <div class="text-4xl font-bold text-sky-500 hover:text-white"> Tailwind </div> 
+                <div class="text-4xl font-bold text-sky-500 hover:text-white"> Frontend </div> 
                 <div class="hidden md:flex space-x-6"> 
                     <a href="#" class="text-gray-700 hover:text-blue-600">HTML</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600">CSS</a> 
                     <a href="#" class="text-gray-700 hover:text-blue-600">JavaScript</a> 
                 </div> 
                 <div class="flex items-center gap-4"> 
-                    <a href="#" class="hidden md:inline-block bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Se increver</a> 
-                     <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none"> ☰ </button> 
+                    <a href="#" class="hidden md:inline-block bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Inscreva-se</a> 
                 </div>
             </div>
         </div> 
@@ -35,8 +35,8 @@
 <section class="bg-black">
     <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
         <div class="md:w-1/2">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Aprenda Tailwind CSS na prática</h1>
-            <p class="text-lg text-gray-400 mb-6">Crie interfaces modernas sem perder tempo escrevendo CSS do zero.
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Aprenda Frontend na prática</h1>
+            <p class="text-lg text-gray-400 mb-6">Crie interfaces modernas sem perder tempo.
                 Um curso direto ao ponto, com projetos reais.</p>
         </div>
         <div class="max-w-1sm mx-auto px-6">
@@ -48,18 +48,39 @@
     <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-10 text-white">O que você vai aprender</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
                 <h3 class="text-xl font-semibold mb-2 text-white">Fundamentos</h3>
                 <p class="text-gray-400">Entenda como funciona a abordagem utility-first e como estruturar seus
                     projetos.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
                 <h3 class="text-xl font-semibold mb-2 text-white">Componentes</h3>
                 <p class="text-gray-400">Crie layouts reutilizáveis e responsivos de forma rápida e organizada.</p>
             </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
                 <h3 class="text-xl font-semibold mb-2 text-white">Projetos reais</h3>
                 <p class="text-gray-400">Construa páginas completas para aplicar o que aprendeu na prática.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-950 justify-items-center">
+    <div class="max-w-6xl mx-auto px-6 items-center">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white">Modulos</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow ">
+                <h3 class="text-xl font-semibold text-center mb-2 text-white">HTML</h3>
+                <i class="fab fa-html5 fa-10x" style="color: rgb(236, 142, 0);"></i>
+                
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <h3 class="text-xl font-semibold text-center mb-2 text-white">CSS</h3>
+                <i class="fa-brands fa-css fa-10x" style="color: rgb(41, 151, 238);"></i>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow ">
+                <h3 class="text-xl font-semibold text-center mb-2 text-white">JavaScript</h3>
+                <i class="fab fa-square-js fa-10x" style="color: yellow;"></i>
             </div>
         </div>
     </div>
@@ -95,7 +116,5 @@
     © 2026 Curso Tailwind. Todos os direitos reservados.
 </footer>
 </body>
-
-</html>
 
 </html>
