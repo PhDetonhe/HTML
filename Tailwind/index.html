@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-black text-gray-200">
+    <nav class="bg- bg-gray-900 shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16"> 
+                <div class="text-xl font-bold"> Tailwind </div> 
+                <div class="hidden md:flex space-x-6"> 
+                    <a href="#" class="text-gray-700 hover:text-blue-600">HTML</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">CSS</a> 
+                    <a href="#" class="text-gray-700 hover:text-blue-600">JavaScript</a> 
+                </div> 
+                <div class="flex items-center gap-4"> <!-- Botão --> 
+                    <a href="#" class="hidden md:inline-block bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Se increver</a> 
+                     <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none"> ☰ </button> 
+                </div>
+            </div>
+        </div> 
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4"> <a href="#" class="block py-2 text-gray-700">Link
+                1</a> <a href="#" class="block py-2 text-gray-700">Link 2</a> <a href="#"
+                class="block py-2 text-gray-700">Link 3</a> <a href="#"
+                class="block mt-2 bg-blue-600 text-white text-center py-2 rounded-lg"> Get Started </a> </div>
+    </nav>
+    <script> const btn = document.getElementById('menu-btn'); const menu = document.getElementById('mobile-menu'); btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); </script>
+
+<section class="bg-black">
+    <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Aprenda Tailwind CSS na prática</h1>
+            <p class="text-lg text-gray-400 mb-6">Crie interfaces modernas sem perder tempo escrevendo CSS do zero.
+                Um curso direto ao ponto, com projetos reais.</p>
+            <button
+                class="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-6 py-3 rounded-xl shadow hover:opacity-90 transition">Quero
+                começar</button>
+        </div>
+        <div class="max-w-1sm mx-auto px-6">
+            <img src="placeholder.png " alt="Curso" class="w-72">
+        </div>
+    </div>
+</section>
+<section class="py-16 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white">O que você vai aprender</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <h3 class="text-xl font-semibold mb-2 text-white">Fundamentos</h3>
+                <p class="text-gray-400">Entenda como funciona a abordagem utility-first e como estruturar seus
+                    projetos.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <h3 class="text-xl font-semibold mb-2 text-white">Componentes</h3>
+                <p class="text-gray-400">Crie layouts reutilizáveis e responsivos de forma rápida e organizada.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <h3 class="text-xl font-semibold mb-2 text-white">Projetos reais</h3>
+                <p class="text-gray-400">Construa páginas completas para aplicar o que aprendeu na prática.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-black py-16">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white">Quem já fez recomenda</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <p class="text-gray-400">"Eu não entendia nada de Tailwind, hoje consigo montar páginas completas
+                    sem travar."</p>
+                <span class="block mt-4 font-semibold text-white">- Lucas</span>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                <p class="text-gray-400">"Curso direto ao ponto, sem enrolação. Vale muito a pena."</p>
+                <span class="block mt-4 font-semibold text-white">- Mariana</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-gray-950">
+    <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-3xl font-bold mb-4 text-white">Comece hoje mesmo</h2>
+        <p class="text-gray-400 mb-6">Acesse o curso completo e comece a criar interfaces modernas agora.</p>
+        <button class="bg-green-600 text-white px-8 py-3 rounded-xl shadow hover:bg-green-700 transition">Garantir
+            acesso</button>
+    </div>
+</section>
+
+<footer class="bg-black py-6 text-center text-gray-500">
+    © 2026 Curso Tailwind. Todos os direitos reservados.
+</footer>
+</body>
+
+</html>
