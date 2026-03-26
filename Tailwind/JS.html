@@ -1,0 +1,188 @@
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-gray-200">
+
+ <div class="h-auto flex items-center justify-center 
+bg-[radial-gradient(circle,#000000,#2dd4bf)] text-white py-2 px-2">
+
+    <div class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-center">
+
+        
+        <p class="font-bold text-sm md:text-lg">
+            OFERTA ESPECIAL: ATÉ 45% APROVEITE!
+        </p>
+
+        
+        <div id="item" class="flex flex-wrap justify-center gap-2 uppercase items-center text-xs md:text-sm">
+
+            <div class="flex items-center gap-1">
+                <div id="dias" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">DIAS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="horas" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">HORAS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="minutos" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">MINS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="segundos" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">SEG</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <nav class="bg-gray-900 shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html">
+                    <div class="text-4xl font-bold text-sky-500 hover:text-white">Frontend</div>
+                </a>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="html.html" class="text-gray-300 hover:text-white">HTML</a>
+                    <a href="css.html" class="text-gray-300 hover:text-white">CSS</a>
+                    <a href="JS.html" class="text-gray-300 hover:text-white">JavaScript</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#" onclick="abrir()" class="bg-gradient-to-r from-sky-500 to-purple-500  text-white px-8 py-3 rounded-xl shadow  hover:scale-105 transition duration-300">
+                        Inscreva-se
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="bg-gradient-to-r from-yellow-600 to-yellow-500 py-20 text-center">
+
+        <h1 class="text-5xl font-bold text-white mb-4">
+            Domine JavaScript
+        </h1>
+
+        <p class="text-gray-300 max-w-xl mx-auto mb-6">
+            Torne seus sites interativos e dinâmicos com JavaScript.
+        </p>
+
+        <button class="bg-yellow-500 px-6 py-3 rounded-xl text-black font-semibold hover:bg-yellow-600 transition">
+            Começar agora
+        </button>
+
+    </section>
+
+    <section class="bg-gray-900">
+    <div class="max-w-4xl mx-auto p-8">
+
+        <h1 class="text-4xl font-bold text-yellow-400 mb-6">JavaScript</h1>
+
+        <p class="mb-4">
+            JavaScript é a linguagem que dá vida aos sites.
+        </p>
+
+        <p class="mb-6 text-gray-400">
+            Com ele, você cria animações, interações e funcionalidades dinâmicas.
+        </p>
+
+    </div>
+    </section>
+
+
+    <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-900 p-6 rounded-2xl">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">Eventos</h3>
+            <p>Responda às ações do usuário.</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-2xl">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">DOM</h3>
+            <p>Manipule elementos da página.</p>
+        </div>
+
+        <div class="bg-gray-900 p-6 rounded-2xl">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">Lógica</h3>
+            <p>Crie sistemas inteligentes.</p>
+        </div>
+
+    </section>
+
+
+
+<div id="overlay" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4">
+
+  <div class="bg-slate-600 rounded-2xl p-6 md:p-10 w-full max-w-lg md:max-w-3xl max-h-[90vh] overflow-y-auto relative shadow-2xl">
+
+ 
+    <button onclick="fechar()" class="absolute top-4 right-4 text-xl font-bold">
+      ✕
+    </button>
+
+
+    <h2 class="text-xl md:text-2xl font-bold text-center mb-2">
+      Inicie sua matrícula
+    </h2>
+
+    <p class="text-center text-sky-500 mb-6 text-sm md:text-base">
+      Esse é o passo que falta para o seu primeiro emprego
+    </p>
+
+   
+    <input type="text" placeholder="Nome completo"
+      class="w-full mb-3 p-3 border rounded-lg">
+
+    <input type="email" placeholder="E-mail"
+      class="w-full mb-3 p-3 border rounded-lg">
+
+    <input type="text" placeholder="Telefone"
+      class="w-full mb-4 p-3 border rounded-lg">
+
+    <p class="text-center mb-2 text-sm md:text-base">
+      Acesso imediato após a matrícula
+    </p>
+
+    <p class="text-center mb-2 text-sm md:text-base">
+      Você receberá por e-mail e WhatsApp o acesso à área de membros e o contato direto dos professores.
+    </p>
+
+    <p class="text-center mb-2 text-red-300 text-sm md:text-base">
+      Parcelamento somente em cartão de crédito!!!
+    </p>
+
+    <p class="text-center mb-4 font-bold text-xs md:text-sm">
+      ⚠️ A renovação do seu plano é automática e ocorrerá ao término do período contratado...
+    </p>
+
+
+    <button class="w-full bg-sky-500 text-white py-3 rounded-lg font-semibold">
+      Continuar
+    </button>
+
+  </div>
+
+</div>
+    <script src="timer.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -10,111 +10,234 @@
 </head>
 
 
-<body class="bg-black text-gray-200">
-    <nav class="bg- bg-gray-900 shadow-md">
+
+<body class=" text-gray-200">
+
+<div class="h-auto flex items-center justify-center 
+bg-[radial-gradient(circle,#000000,#2dd4bf)] text-white py-2 px-2">
+
+    <div class="flex flex-col md:flex-row items-center gap-2 md:gap-8 text-center">
+
+        
+        <p class="font-bold text-sm md:text-lg">
+            OFERTA ESPECIAL: ATÉ 45% APROVEITE!
+        </p>
+
+        
+        <div id="item" class="flex flex-wrap justify-center gap-2 uppercase items-center text-xs md:text-sm">
+
+            <div class="flex items-center gap-1">
+                <div id="dias" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">DIAS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="horas" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">HORAS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="minutos" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">MINS</p>
+            </div>
+
+            <div class="flex items-center gap-1">
+                <div id="segundos" class="bg-black/30 px-2 py-1 rounded"></div>
+                <p class="animate-pulse">SEG</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    <nav class="bg-gray-900 shadow-md">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16"> 
-                <div class="text-4xl font-bold text-sky-500 hover:text-white"> Frontend </div> 
-                <div class="hidden md:flex space-x-6"> 
-                    <a href="#" class="text-gray-700 hover:text-blue-600">HTML</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600">CSS</a> 
-                    <a href="#" class="text-gray-700 hover:text-blue-600">JavaScript</a> 
-                </div> 
-                <div class="flex items-center gap-4"> 
-                    <a href="#" class="hidden md:inline-block bg-sky-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Inscreva-se</a> 
+            <div class="flex justify-between items-center h-16">
+                <div class="text-4xl font-bold text-sky-500 hover:text-white">Frontend</div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a href="html.html" class="text-gray-300 hover:text-white">HTML</a>
+                    <a href="css.html" class="text-gray-300 hover:text-white">CSS</a>
+                    <a href="JS.html" class="text-gray-300 hover:text-white">JavaScript</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#" onclick="abrir()" class="bg-gradient-to-r from-sky-500 to-purple-500  text-white px-8 py-3 rounded-xl shadow  hover:scale-105 transition duration-300">
+                        Inscreva-se
+                    </a>
                 </div>
             </div>
-        </div> 
-        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4"> <a href="#" class="block py-2 text-gray-700">Link
-                1</a> <a href="#" class="block py-2 text-gray-700">Link 2</a> <a href="#"
-                class="block py-2 text-gray-700">Link 3</a> <a href="#"
-                class="block mt-2 bg-blue-600 text-white text-center py-2 rounded-lg"> Get Started </a> </div>
+        </div>
     </nav>
+
+
+    <section class="bg-black -skew-y-7">
+        <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+                    Aprenda Frontend na prática
+                </h1>
+                <p class="text-lg text-gray-400 mb-6">
+                    Crie interfaces modernas sem perder tempo.
+                    Um curso direto ao ponto, com projetos reais.
+                </p>
+            </div>
+
+            <div class="max-w-sm mx-auto px-6">
+                <img src="placeholder.png" alt="Curso" class="w-72">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-16 bg-gray-950 justify-items-center">
+        <div class="max-w-6xl mx-auto px-6 items-center">
+
+            <h2 class="text-3xl font-bold text-center mb-10 text-white">Módulos</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 text-white"> O que você vai aprender</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-900 p-6 rounded-2xl shadow border border-transparent hover:border-white transform hover:scale-105 transition text-center">
+                    <h3 class="text-xl font-semibold mb-4 text-white">HTML</h3>
+                    <a href="html.html"><i class="fab fa-html5 fa-10x" style="color: rgb(236, 142, 0);"></i></a>
+                </div>
+
+
+                <div class="bg-gray-900 p-6 rounded-2xl shadow border border-transparent hover:border-white transform hover:scale-105 transition text-center">
+                    <h3 class="text-xl font-semibold mb-4 text-white">CSS</h3>
+                    <a href="css.html"><i class="fab fa-css3-alt fa-10x" style="color: rgb(41, 151, 238);"></i></a>
+                </div>
+
+
+                <div class="bg-gray-900 p-6 rounded-2xl shadow border border-transparent hover:border-white transform hover:scale-105 transition text-center">
+                    <h3 class="text-xl font-semibold mb-4 text-white">JavaScript</h3>
+                    <a href="JS.html"><i class="fab fa-square-js fa-10x" style="color: yellow;"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+
+    <section class="bg-black py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10 text-white">
+                Quem já fez recomenda
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                    <p class="text-gray-400">
+                        "Eu não entendia nada de Tailwind, hoje consigo montar páginas completas sem travar."
+                    </p>
+                    <span class="block mt-4 font-semibold text-white">- fulano</span>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-2xl shadow">
+                    <p class="text-gray-400">
+                        "Curso direto ao ponto, sem enrolação. Vale muito a pena."
+                    </p>
+                    <span class="block mt-4 font-semibold text-white">- ciclana</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-gray-950">
+        <div class="max-w-2xl mx-auto text-center px-6">
+            <h2 class="text-3xl font-bold mb-4 text-white">
+                Comece hoje mesmo
+            </h2>
+            <p class="text-gray-400 mb-6">
+                Acesse o curso completo e comece a criar interfaces modernas agora.
+            </p>
+            <div class="bg-gray-900 p-6 rounded-2xl shadow border border-white text-center">
+                <p class="text-gray-400 text-sm">Acesso completo ao curso</p>
+                <h3 class="text-3xl font-bold text-white mt-2">
+                    12x de R$ 200000000,00
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                    ou R$ 1.499,00 à vista
+                </p>
+            </div>
+            <br>
+            <button onclick="abrir()" class="bg-gradient-to-r from-sky-500 to-purple-500  text-white px-8 py-3 rounded-xl shadow  hover:scale-105 transition duration-300">
+    Garantir acesso
+    </button>
+        </div>
+    </section>
+
+
+<div id="overlay" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 px-4">
+
+  <div class="bg-slate-600 rounded-2xl p-6 md:p-10 w-full max-w-lg md:max-w-3xl max-h-[90vh] overflow-y-auto relative shadow-2xl">
+
+    <!-- Botão fechar -->
+    <button onclick="fechar()" class="absolute top-4 right-4 text-xl font-bold">
+      ✕
+    </button>
+
+    <!-- Título -->
+    <h2 class="text-xl md:text-2xl font-bold text-center mb-2">
+      Inicie sua matrícula
+    </h2>
+
+    <p class="text-center text-sky-500 mb-6 text-sm md:text-base">
+      Esse é o passo que falta para o seu primeiro emprego
+    </p>
+
    
+    <input type="text" placeholder="Nome completo"
+      class="w-full mb-3 p-3 border rounded-lg">
 
-<section class="bg-black">
-    <div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Aprenda Frontend na prática</h1>
-            <p class="text-lg text-gray-400 mb-6">Crie interfaces modernas sem perder tempo.
-                Um curso direto ao ponto, com projetos reais.</p>
-        </div>
-        <div class="max-w-1sm mx-auto px-6">
-            <img src="placeholder.png " alt="Curso" class="w-72">
-        </div>
-    </div>
-</section>
-<section class="py-16 bg-gray-950">
-    <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10 text-white">O que você vai aprender</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
-                <h3 class="text-xl font-semibold mb-2 text-white">Fundamentos</h3>
-                <p class="text-gray-400">Entenda como funciona a abordagem utility-first e como estruturar seus
-                    projetos.</p>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
-                <h3 class="text-xl font-semibold mb-2 text-white">Componentes</h3>
-                <p class="text-gray-400">Crie layouts reutilizáveis e responsivos de forma rápida e organizada.</p>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow hover:border-red-900 transition">
-                <h3 class="text-xl font-semibold mb-2 text-white">Projetos reais</h3>
-                <p class="text-gray-400">Construa páginas completas para aplicar o que aprendeu na prática.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <input type="email" placeholder="E-mail"
+      class="w-full mb-3 p-3 border rounded-lg">
 
-<section class="py-16 bg-gray-950 justify-items-center">
-    <div class="max-w-6xl mx-auto px-6 items-center">
-        <h2 class="text-3xl font-bold text-center mb-10 text-white">Modulos</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-900 p-6 rounded-2xl shadow ">
-                <h3 class="text-xl font-semibold text-center mb-2 text-white">HTML</h3>
-                <i class="fab fa-html5 fa-10x" style="color: rgb(236, 142, 0);"></i>
-                
-            </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
-                <h3 class="text-xl font-semibold text-center mb-2 text-white">CSS</h3>
-                <i class="fa-brands fa-css fa-10x" style="color: rgb(41, 151, 238);"></i>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow ">
-                <h3 class="text-xl font-semibold text-center mb-2 text-white">JavaScript</h3>
-                <i class="fab fa-square-js fa-10x" style="color: yellow;"></i>
-            </div>
-        </div>
-    </div>
-</section>
+    <input type="text" placeholder="Telefone"
+      class="w-full mb-4 p-3 border rounded-lg">
 
-<section class="bg-black py-16">
-    <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10 text-white">Quem já fez recomenda</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
-                <p class="text-gray-400">"Eu não entendia nada de Tailwind, hoje consigo montar páginas completas
-                    sem travar."</p>
-                <span class="block mt-4 font-semibold text-white">- Lucas</span>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-2xl shadow">
-                <p class="text-gray-400">"Curso direto ao ponto, sem enrolação. Vale muito a pena."</p>
-                <span class="block mt-4 font-semibold text-white">- Mariana</span>
-            </div>
-        </div>
-    </div>
-</section>
+    <p class="text-center mb-2 text-sm md:text-base">
+      Acesso imediato após a matrícula
+    </p>
 
-<section class="py-16 bg-gray-950">
-    <div class="max-w-4xl mx-auto text-center px-6">
-        <h2 class="text-3xl font-bold mb-4 text-white">Comece hoje mesmo</h2>
-        <p class="text-gray-400 mb-6">Acesse o curso completo e comece a criar interfaces modernas agora.</p>
-        <button class="bg-gradient-to-r from-sky-500 to-purple-500 text-white px-8 py-3 rounded-xl shadow">Garantir
-            acesso</button>
-    </div>
-</section>
+    <p class="text-center mb-2 text-sm md:text-base">
+      Você receberá por e-mail e WhatsApp o acesso à área de membros e o contato direto dos professores.
+    </p>
 
-<footer class="bg-black py-6 text-center text-gray-500">
-    © 2026 Curso Tailwind. Todos os direitos reservados.
-</footer>
+    <p class="text-center mb-2 text-red-300 text-sm md:text-base">
+      Parcelamento somente em cartão de crédito!!!
+    </p>
+
+    <p class="text-center mb-4 font-bold text-xs md:text-sm">
+      ⚠️ A renovação do seu plano é automática e ocorrerá ao término do período contratado...
+    </p>
+
+
+    <button class="w-full bg-sky-500 text-white py-3 rounded-lg font-semibold">
+      Continuar
+    </button>
+
+  </div>
+
+</div>
+
+<script src="timer.js"></script>
+<script src="script.js"></script>
+
 </body>
 
-</html>
+    <footer class="bg-black py-6 text-center text-gray-500">
+        © 2026 Curso Tailwind. Todos os direitos reservados.
+    </footer>
