@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-300">
+   <nav class="bg-slate-400 shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-4xl font-bold text-blue-900 hover:text-white">PetShop</div>
+
+                
+                <div class="hidden md:flex space-x-6" id="categoriasnav">
+                </div>
+
+                  <div class="flex items-center gap-4">
+                    <a href="#" onclick="abrir()"
+                        class="bg-gradient-to-r from-blue-500 to-blue-900 text-white px-8 py-3 rounded-xl shadow hover:scale-105 transition duration-300">
+                        Adicionar categoria
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="flex justify-items-center">
+        <div id="sectionscategorias" class="flex justify-between items-center">
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<div id="overlay" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50 px-4">
+
+        <div
+            class="bg-slate-400 rounded-2xl p-6 md:p-10 w-full max-w-lg md:max-w-3xl max-h-[90vh] overflow-y-auto relative shadow-2xl">
+
+
+
+            <button onclick="fechar()" class="absolute top-4 right-4 text-xl font-bold text-white">
+                ✕
+            </button>
+
+
+            <h2 class="text-xl md:text-2xl font-bold text-center mb-2 text-white">
+                Adicione uma categoria:
+            </h2>
+
+            <input type="text" placeholder="Nome" class="w-full mb-3 p-3 border rounded-lg bg-white text-black">
+
+            <input type="text" placeholder="Descrição" class="w-full mb-3 p-3 border rounded-lg bg-white text-black">
+
+            <button class="w-full bg-blue-950 text-white py-3 rounded-lg font-semibold">
+                Continuar
+            </button>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="js/fetchCategorias.js"></script>
+<script src="js/modal.js"></script>
+</html>
